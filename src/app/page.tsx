@@ -119,18 +119,14 @@ export default function Home() {
   return (
     <motion.div initial='initial' animate='animate'>
       <motion.header variants={stagger}>
-          <motion.div className="logo_wrapper" variants={header}>dev<span>amit</span></motion.div>
+          <motion.div className="logo_wrapper" variants={header}>Soft<span>vision</span></motion.div>
           <motion.div className="menu_container" variants={stagger}>
             <motion.span variants={header}>
-              <IconContext.Provider value={{color:"#000", size:"18px", className:"icons_container"}}>
-                <div className="icon"><FaBehance/></div>
-                <div className="icon"><FaDribbble/></div>
-              </IconContext.Provider>
             </motion.span>
-            <motion.span variants={header}>
-              <IconContext.Provider value={{color:"#000", size:"18px"}}>
+            <motion.span variants={header} whileHover={{scale:1.05}} whileTap={{scale:0.95}}>
+              <IconContext.Provider value={{color:"#000", size:"40px"}}>
                 <div className="icon"><IoMailOutline/></div>
-                hello@example.co
+                softvisioncorp.com
               </IconContext.Provider>
             </motion.span>
             <motion.span className="menu" variants={header}>
